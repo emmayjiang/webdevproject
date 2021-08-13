@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- META tags help search engines identify your content more easily -->
+        <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+        <meta name="author" content="Emma Jiang">
+        <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+        <meta name="description" content="Web Development Project - Emma Jiang">
+
+        <!-- The title will appear in the menu bar of the browser -->
+        <title>The Duquesne Incline</title>
+
+        <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.lightbox.min.js"></script>
+
+        <script>
+            $(function() {
+                $('#gallery a').lightBox();
+            })
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div id="navigation">
+
+            <!-- Navigation Menu -->
+            <nav>
+                <a class="selected" href="index.html">Home</a>
+                <a href="book.html">Book a Trip</a>
+                <a href="about.html">About the Incline</a>
+                <a href="mailing.html">Contact Us</a>
+            </nav>
+
+        </div>
+        
+        <div id="container">
+
+            <!-- Top header menu containing logo and Navigation bar -->
+            <header>
+
+                <div id="top_row">
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <img src="images/duquesne_incline_logo.png" alt = "The Duquesne Incline Logo"/> <!-- http://www.duquesneincline.org/index.html -->
+                    </div>
+                    
+                    <!-- Header Text -->
+                    <h1>The Duquesne Incline</h1>
+                </div>
+
+            </header>
+            
+            <div id="sidebar">
+
+                <!-- Contact -->
+                <h3>Contact</h3>
+                <table>
+                    <tr><th>Parking Address</th></tr>
+                    <tr><td>1197 West Carson St, Pittsburgh, PA 15219</td></tr>
+                    <tr><th>Mailing Address</th></tr>
+                    <tr><td>1220 Grandview Ave, Pittsburgh, PA 15212</td></tr>
+                </table>
+
+                <table>
+                    <tr><th>Phone</th><td>(412) 381-1665</td></tr>
+                    <tr><th>Email</th><td><a href="duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></td></tr>
+                    <tr><th>Website</th><td><a href="http://www.duquesneincline.org/index.html">http://www.duquesneincline.org</a></td></tr>
+                </table>
+
+                <!-- Hours of Operation -->
+                <h3>Hours of Operation</h3>
+                <table>
+                    <tr><th>Mondays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Tuesdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Wednesdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Thursdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Fridays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Saturdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Sundays</th><td>07:00AM - 12:30AM</td></tr>
+                    <tr><th>Holidays</th><td>07:00AM - 12:30AM</td></tr>
+                </table>
+
+                <p>We're open 365 days a year!</p>
+
+                <!-- Social Media Links -->
+                <h3>Find us on Social Media</h3> <!-- Images from lab, google -->
+                <a href="https://www.youtube.com/watch?v=bSLvrz5GraI"><img src="images/yt.png" alt="Youtube Icon"></a>
+                <a href="https://www.facebook.com/TheDuquesneIncline/"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="http://davedicello.com/places/pittsburgh/"><img src="images/photos.png" alt="Photography Icon"></a>
+            </div>
+
+            <div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+                
+                <!-- About -->
+                <h3>About</h3>
+                    <p>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.</p>
+                <hr>
+
+                <!-- Photo Gallery -->
+                <h3>Photo Gallery</h3>
+                <div id="content-gallery">
+                      <div id="gallery">
+                      
+                        <div id="galleryThumbnail1"><div id="thmbnlShadow1">
+                          <a href="images/image1.jpg" title="A picture of the incline on a cloudy day. Image courtesy of the Duquesne Incline Facebook page.">
+                          <img src="images/image1.jpg" width="100" alt="image 1"/></a></div></div>
+                       
+                          <div id="galleryThumbnail2"><div id="thmbnlShadow2">
+                          <a href="images/image2.jpg" title="A picture of Pittsburgh from the incline. Image courtesy of the Duquesne Incline Facebook page.">
+                          <img src="images/image2.jpg" width="100" alt="image 2"></a></div></div>
+                       
+                          <div id="galleryThumbnail3"><div id="thmbnlShadow3">
+                          <a href="images/image3.jpg" title="The inside of the trolley. Image courtesy of the Duquesne Incline Facebook page.">
+                          <img src="images/image3.jpg" width="100" alt="image 3"></a></div></div>
+                       
+                          <div id="galleryThumbnail4"><div id="thmbnlShadow4">
+                          <a href="images/image4.jpg" title="The view from the top of the incline. Image courtesy of the Duquesne Incline Facebook page.">
+                          <img src="images/image4.jpg" width="100" alt="image 4"></a></div></div>
+                       
+                          <div id="galleryThumbnail5"><div id="thmbnlShadow5">
+                          <a href="images/image5.jpg" title="The Duquesne Incline station. Image courtesy of the Duquesne Incline Facebook page.">
+                          <img src="images/image5.jpg" width="100" alt="image 5"></a></div></div>
+                      </div>
+                </div>
+                
+                <hr>
+
+                <!-- FAQ -->
+                <h3>Frequently Asked Questions</h3>
+                <ul>
+                <li>The Duquesne Incline is part of the transportation system in Pittsburgh and uses the same cash fare system as the buses and trolleys. A change machine is available for your convenience. Having the exact fare in hand speeds up the payment process considerably.</li>
+                <li>Seniors 65 and older ride free. The Duquesne Incline is required to request a Pennsylvania Senior Citizen ID card as proof of age in order to be reimbursed by the Commonwealth of PA.</li>
+                <li>Sorry, no rest rooms. A port-a-john is available outside of the lower station. The Duquesne Incline has been part of Pittsburgh's transportation system since 1877 like a trolley or the cable cars of San Francisco.</li>
+                <li>Saturday and Sunday afternoons are our busiest times. Expect to wait in line for about 10 minutes in both directions.</li>
+                <li>There are many steps to traverse from the lower station parking lot. The Upper Station, located at 1220 Grandview Ave, Pittsburgh, PA 15211, is wheelchair accessible. Our observation deck is also wheelchair accessible. The Historic (original) Incline cars can accommodate wheelchairs up to 25 inches in width.</li>
+                </ul>
+
+                <hr>
+
+                <!-- Google Maps -->
+                <h3>Locate us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6359845162533!2d-80.02040059944964!3d40.439058662104614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af23f522ab%3A0x8b99a45afa1c012e!2sThe%20Duquesne%20Incline!5e0!3m2!1sen!2sus!4v1618101780377!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            </div>
+
+            <!-- footer -->
+            <footer>
+                Logo and header image courtesy of the Duquesne Incline Facebook Page.<br/>
+                &copy; Emma Jiang<br/>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

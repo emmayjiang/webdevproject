@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- META tags help search engines identify your content more easily -->
+        <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+        <meta name="author" content="Emma Jiang">
+        <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+        <meta name="description" content="Web Development Project - Emma Jiang">
+
+        <!-- The title will appear in the menu bar of the browser -->
+        <title>The Duquesne Incline</title>
+
+        <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.lightbox.min.js"></script>
+
+        <script>
+            $(function() {
+                $( "#tabs" ).tabs({
+                    event: "mouseover"
+                });
+            });
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div id="navigation">
+
+            <!-- Navigation Menu -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a class="selected" href="book.html">Book a Trip</a>
+                <a href="about.html">About the Incline</a>
+                <a href="mailing.html">Contact Us</a>
+            </nav>
+
+        </div>
+        
+        <div id="container">
+
+            <!-- Top header menu containing logo and Navigation bar -->
+            <header>
+
+                <div id="top_row">
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <img src="images/duquesne_incline_logo.png" alt = "logo"/> <!-- http://www.duquesneincline.org/index.html -->
+                    </div>
+                    
+                    <!-- Header Text -->
+                    <h1>The Duquesne Incline</h1>
+                </div>
+
+            </header>
+            
+            <div id="sidebar">
+
+                <!-- Contact -->
+                <h3>Contact</h3>
+                <table>
+                    <tr><th>Parking Address</th></tr>
+                    <tr><td>1197 West Carson St, Pittsburgh, PA 15219</td></tr>
+                    <tr><th>Mailing Address</th></tr>
+                    <tr><td>1220 Grandview Ave, Pittsburgh, PA 15212</td></tr>
+                </table>
+
+                <table>
+                    <tr><th>Phone</th><td>(412) 381-1665</td></tr>
+                    <tr><th>Email</th><td><a href="duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></td></tr>
+                    <tr><th>Website</th><td><a href="http://www.duquesneincline.org/index.html">http://www.duquesneincline.org</a></td></tr>
+                </table>
+
+                <!-- Hours of Operation -->
+                <h3>Hours of Operation</h3>
+                <table>
+                    <tr><th>Mondays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Tuesdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Wednesdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Thursdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Fridays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Saturdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Sundays</th><td>07:00AM - 12:30AM</td></tr>
+                    <tr><th>Holidays</th><td>07:00AM - 12:30AM</td></tr>
+                </table>
+
+                <p>We're open 365 days a year!</p>
+
+                <!-- Social Media Links -->
+                <h3>Find us on Social Media</h3> <!-- Images from lab, google -->
+                <a href="https://www.youtube.com/watch?v=bSLvrz5GraI"><img src="images/yt.png" alt="Youtube"></a>
+                <a href="https://www.facebook.com/TheDuquesneIncline/"><img src="images/facebook.png" alt="Facebook Page"></a>
+                <a href="http://davedicello.com/places/pittsburgh/"><img src="images/photos.png" alt="Photography"></a>
+            </div>
+
+            <div id="content">
+                
+                <!-- Fares and Rates -->
+                <h3>Fares and Rates</h3>
+                <p>Cash fares as well as Port Authority bus passes and tickets are accepted as payment.  Bus transfers can be purchased at the Incline.</p>
+
+                <div id="tabs">
+
+                    <!-- Declare tabs -->
+                    <ul>
+                        <li><a href="#tabs-1">Basic Prices</a></li>
+                        <li><a href="#tabs-2">Group Prices</a></li>
+                        <li><a href="#tabs-3">Field Trip Program</a></li>
+                        <li><a href="#tabs-4">Tours</a></li>
+                    </ul>
+
+                    <!-- Basic Prices -->
+                    <div id="tabs-1">
+                        <p>Adults (Ages 12-64) $2.50 Each Way or $5.00 Round Trip</p>
+                        <p>Children (Ages 6-11) $1.25 Each Way or $2.50 Round Trip</p>
+                        <hr>
+                        <p>Children 5 and Under Free</p>
+                        <p>PA Seniors 65 and older with a Port Authority Senior Citizen ID (no exceptions) Free</p>
+                        <p>University of Pittsburgh Students Free, with proper I.D.</p>
+                        <p>Carnegie Mellon University Students Free, with proper I.D.</p>
+                        <p>Chatham University Students Free, with proper I.D.</p>
+                    </div>
+
+                    <!-- Group Prices -->
+                    <div id="tabs-2">
+                        <p>Adults (Ages 12-64) $1.75 Each Way or $3.50 Round Trip</p>
+                        <p>Children (Ages 6-11) $1.00 Each Way or $1.75 Round Trip</p>
+                        <hr>
+                        <p>Group Rates are Valid for Any Group of Ten or More People</p>
+                    </div>
+
+                    <!-- Field Trip Program -->
+                    <div id="tabs-3">
+                        <p>A free field trip program is available for students and youth groups of ten or more daily – except Saturdays and Sundays after 12:00 noon due to weekend crowds and limited space.</p>
+                        <p>The program includes:</p>
+                        <ul>
+                            <li>A teacher's lesson packet for students' specific grade level</li>
+                            <li>A round trip ride on the Duquesne Incline</li>
+                            <li>A history of inclines in Pittsburgh</li>
+                            <li>A discussion about Pittsburgh's industrial past</li>
+                            <li>A visit to the machine room to observe the original hoisting equipment in operation and learn about the engineers who built it</li>
+                            <li>A panoramic view of Downtown Pittsburgh and The North Shore from our observation deck 400 feet above the three rivers</li>
+                            <li>A brief history of the French and Indian War from which the city arose</li>
+                        </ul>
+                        Reservations can be made <a href="http://incline.pghfree.net/duquesneincline/view.php?id=1">here</a>.
+                    </div>
+
+                    <!-- Tours -->
+                    <div id="tabs-4">
+                        <p>City Tours that feature the Duquesne Incline:</p>
+                        <table>
+                            <tr><th>Pittsburgh Tours and More</th><td><a href="www.pghtoursandmore.net">www.pghtoursandmore.net</a> (412) 323-4707</td></tr>
+                            <tr><th>Molly's Trolley</th><td><a href="www.mollystrolleyspgh.com">www.mollystrolleyspgh.com</a> (412) 281-2055</td></tr>
+                            <tr><th>Rivers of Steel</th><td><a href="www.riversofsteel.com">www.riversofsteel.com</a> (412) 464-4020 or (412) 381-8687</td></tr>
+                            <tr><th>The Pittsburgh Tour Company</th><td><a href="http://www.pghtours.com/">http://www.pghtours.com/</a> (412) 381-8687</td></tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <footer>
+                Logo and header image courtesy of the Duquesne Incline Facebook Page.<br/>
+                &copy; Emma Jiang<br/>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

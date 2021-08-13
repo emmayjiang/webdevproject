@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- META tags help search engines identify your content more easily -->
+        <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+        <meta name="author" content="Emma Jiang">
+        <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+        <meta name="description" content="Web Development Project - Mailing - Emma Jiang">
+
+        <!-- The title will appear in the menu bar of the browser -->
+        <title>The Duquesne Incline - Mailing</title>
+
+        <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.lightbox.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div id="navigation">
+
+            <!-- Navigation Menu -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="book.html">Book a Trip</a>
+                <a href="about.html">About the Incline</a>
+                <a class="selected" href="mailing.html">Contact Us</a>
+            </nav>
+
+        </div>
+        
+        <div id="container">
+
+            <!-- Top header menu containing logo and Navigation bar -->
+            <header>
+
+                <div id="top_row">
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <img src="images/duquesne_incline_logo.png" alt = "logo"/> <!-- http://www.duquesneincline.org/index.html -->
+                    </div>
+                    
+                    <!-- Header Text -->
+                    <h1>The Duquesne Incline</h1>
+                </div>
+
+            </header>
+            
+            <div id="sidebar">
+
+                <!-- Contact -->
+                <h3>Contact</h3>
+                <table>
+                    <tr><th>Parking Address</th></tr>
+                    <tr><td>1197 West Carson St, Pittsburgh, PA 15219</td></tr>
+                    <tr><th>Mailing Address</th></tr>
+                    <tr><td>1220 Grandview Ave, Pittsburgh, PA 15212</td></tr>
+                </table>
+
+                <table>
+                    <tr><th>Phone</th><td>(412) 381-1665</td></tr>
+                    <tr><th>Email</th><td><a href="duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></td></tr>
+                    <tr><th>Website</th><td><a href="http://www.duquesneincline.org/index.html">http://www.duquesneincline.org</a></td></tr>
+                </table>
+
+                <!-- Hours of Operation -->
+                <h3>Hours of Operation</h3>
+                <table>
+                    <tr><th>Mondays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Tuesdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Wednesdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Thursdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Fridays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Saturdays</th><td>05:30AM - 12:30AM</td></tr>
+                    <tr><th>Sundays</th><td>07:00AM - 12:30AM</td></tr>
+                    <tr><th>Holidays</th><td>07:00AM - 12:30AM</td></tr>
+                </table>
+
+                <p>We're open 365 days a year!</p>
+
+                <!-- Social Media Links -->
+                <h3>Find us on Social Media</h3> <!-- Images from lab, google -->
+                <a href="https://www.youtube.com/watch?v=bSLvrz5GraI"><img src="images/yt.png" alt="Youtube"></a>
+                <a href="https://www.facebook.com/TheDuquesneIncline/"><img src="images/facebook.png" alt="Facebook Page"></a>
+                <a href="http://davedicello.com/places/pittsburgh/"><img src="images/photos.png" alt="Photography"></a>
+            </div>
+
+            <div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+                
+                <!-- Mailing List form -->
+                <h3>Join our Mailing List!</h3>
+                <form action="mailto:duq.incline@duquesneincline.org" onsubmit="return validate()" method="post" enctype="text/plain">
+                    <fieldset>
+                        <label for="name">Name (required):</label><br/>
+                        <input type="text" id="name" name="name" size="20" minlength = "1" maxlength="250" required><br/><br/>
+                        <label for="name">Zip Code:</label><br/>
+                        <input type="text" id="zip" name="zip" size="20" minlength="5" maxlength="5" required><br/><br/>
+                        <label for="email">Email address (required):</label><br/>
+                        <input type="email" id="email" name="email" placeholder="abc@defg.com" required><br/><br/>
+                        <label for="sub">Would you like to subscribe to our newsletter?</label><br/>
+                        <input type="checkbox" id="sub" name="sub"><br/><br/>
+                        <input type ="image" src="images/submit.png" alt="Submit">
+                    </fieldset>
+                    </form>
+
+            </div> <!-- Close content -->
+
+            <!-- Footer -->
+            <footer>
+                Logo and header image courtesy of the Duquesne Incline Facebook Page.<br/>
+                &copy; Emma Jiang<br/>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

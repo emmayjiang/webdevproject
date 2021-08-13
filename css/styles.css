@@ -1,0 +1,196 @@
+/* HTML */
+html {
+    overflow-y: scroll;
+}
+
+/* Body */
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	font-size: 100%;
+	line-height: 1.7em;
+	color: #000000;
+}
+
+/* Header Image */
+header {
+	background: url('../images/image1-facebook.png') no-repeat center; /* https://www.facebook.com/TheDuquesneIncline/ */
+	background-size: cover;
+}
+
+/* Top row */
+#top_row {
+	border-bottom: 1px dotted #ccc;
+	padding: 10em .5em .75em .5em;
+}
+
+#top_row h1 {
+	color: #FFFFFF; 
+	font-size: 3.75em;
+	letter-spacing: -2px;
+	padding: 15px 0px 0px 0px;
+	text-align:left;
+}
+
+#top_row header {
+    margin-bottom: -2.5em;
+}
+
+/* Logo */
+#logo {
+    float: left;
+    height: 60px;
+    width: 30%;
+}
+ 
+#logo img {
+    width: 200px;
+    float: left;
+    padding: 0px 20px 20px 0px;
+}
+
+/* Navigation */
+#navigation {
+    background-color:#FFFFFF;
+	color: #FFFFFF;
+}
+
+#navigation nav {
+    list-style:none;
+    text-align:center;
+	padding: 5px;
+}
+
+#navigation nav li {
+	display: inline;
+}
+
+#navigation nav a {
+	display: inline-block;
+	font-size: 1.125em;
+	font-weight: 400;
+	padding: 15px;
+	margin: 0px auto;
+	color: #000000;
+	text-decoration: none;
+}
+
+#navigation nav a.selected {
+	background: #DBC5A1;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#navigation nav a.selected:hover {
+	background: #DBC5A1;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#navigation nav a:hover {	
+	background: #e7d9c1;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Sidebar */
+#sidebar {
+	float: left;
+	padding: 2em .8em 1em .8em;
+	font-size: .8em;
+}
+
+#sidebar h3 {
+	font-size: 1.1em;
+	border-bottom: .8px dotted #ccc;
+}
+
+#sidebar table, th, tr {
+	text-align: left;
+	border-collapse: collapse;
+	line-height: 160%;
+}
+
+#sidebar td {
+	border: none;
+	text-align: left;
+}
+
+#content-gallery {
+	padding: 0em 0em 7em 0em;
+}
+
+/* Links */
+a {	
+	color: #66554E;
+	text-decoration: underline dotted;
+}
+
+a:hover {	
+	color: #DBC5A1;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #919091;
+	text-decoration: underline dotted;
+}
+
+/* Content */
+#content {
+    float: left;
+    width: 70%;
+    margin: 0;
+    padding: 1em;
+}
+
+#content h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+}
+
+#content img {
+    float: left;
+    margin: 1em;
+}
+
+/* Footer */
+footer {
+	clear: both;
+	margin: 0;
+	padding: .5em;
+	color: #000000;
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+}
+
+/* Tabs */
+.ui-tabs .ui-tabs-nav
+{
+background: #DE9C7F;
+}
+
+/* Form */
+form {
+    width: 75%;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DE9C7F;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* iFrame for Google Maps */
+iframe {
+	display:block;
+	margin:auto;
+	width:800px;
+	height:400px;
+}
